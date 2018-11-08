@@ -6,31 +6,31 @@
         </div>
 
         <div class="panel panel-default">
-            <div class="panel-heading">Edit company</div>
+            <div class="panel-heading">Edit</div>
             <div class="panel-body">
                 <form v-on:submit="saveForm()">
                     <div class="row">
                         <div class="col-xs-12 form-group">
-                            <label class="control-label">Company name</label>
-                            <input type="text" v-model="company.name" class="form-control">
+                            <label class="control-label">Loan Amount</label>
+                            <input type="text" v-model="company.loan_amount" class="form-control">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 form-group">
-                            <label class="control-label">Company address</label>
-                            <input type="text" v-model="company.address" class="form-control">
+                            <label class="control-label">Loan Term</label>
+                            <input type="text" v-model="company.loan_term" class="form-control">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 form-group">
-                            <label class="control-label">Company website</label>
-                            <input type="text" v-model="company.website" class="form-control">
+                            <label class="control-label">Interest Rate</label>
+                            <input type="text" v-model="company.interest_rate" class="form-control">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 form-group">
-                            <label class="control-label">Company email</label>
-                            <input type="text" v-model="company.email" class="form-control">
+                            <label class="control-label">Created at</label>
+                            <input type="text" v-model="company.created_date_at" class="form-control">
                         </div>
                     </div>
                     <div class="row">

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Company extends Model
 {
-    protected $fillable = ['name', 'address', 'website', 'email'];
+    protected $fillable = ['loan_amount', 'loan_term', 'interest_rate', 'created_date_at'];
 }

@@ -5,24 +5,24 @@
         </div>
 
         <div class="panel panel-default">
-            <div class="panel-heading">Companies list</div>
+            <div class="panel-heading">All Loans</div>
             <div class="panel-body">
                 <table class="table table-bordered table-striped">
                     <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Website</th>
-                        <th>Email</th>
-                        <th width="100">&nbsp;</th>
+                        <th>Loan Amount</th>
+                        <th>Loan Term</th>
+                        <th>Interest Rate</th>
+                        <th>Created at</th>
+                        <th width="100">Edit&nbsp;</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr v-for="company, index in companies">
-                        <td>{{ company.name }}</td>
-                        <td>{{ company.address }}</td>
-                        <td>{{ company.website }}</td>
-                        <td>{{ company.email }}</td>
+                        <td>{{ company.loan_amount }}</td>
+                        <td>{{ company.loan_term }}</td>
+                        <td>{{ company.interest_rate }}</td>
+                        <td>{{ company.created_date_at }}</td>
                         <td>
                             <router-link :to="{name: 'editCompany', params: {id: company.id}}" class="btn btn-xs btn-default">
                                 Edit

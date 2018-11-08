@@ -15,10 +15,10 @@ class CreateCompaniesTable extends Migration
     {
         Schema::create('companies', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->nullable();
-            $table->string('address')->nullable();
-            $table->string('website')->nullable();
-            $table->string('email')->nullable();
+            $table->string('loan_amount')->nullable();
+            $table->string('loan_term')->nullable();
+            $table->string('interest_rate')->nullable();
+            $table->string('created_date_at')->nullable();
             $table->timestamps();
         });
     }
